@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CSE 211 - Chess Project
 This project implements a chess game with optional fantasy elements.
 
@@ -28,3 +29,7 @@ existing configuration files under `data/` to help understand the format.
 ## Unit Testing
 1. Install dependencies using `make deps`.
 2. Run with `./bin/chess_test -v` or `make test`.
+=======
+# chess-game
+The project was designed by paying attention to modern C++ principles, unit testing, and separation of concerns. The result of this is a product which is easy to maintain, study, and develop.
+>>>>>>> 8effa86b97136c890f306de6ae6383102a4a256b
