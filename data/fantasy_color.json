@@ -1,0 +1,181 @@
+{
+    "game_settings": {
+        "name": "chess",
+        "board_size": 8,
+        "turn_limit": -1
+    },
+    "pieces": [
+        {
+            "type": "pawn",
+            "positions": {
+                "black": [
+                    { "x": 0, "y": 6 },
+                    { "x": 1, "y": 6 },
+                    { "x": 2, "y": 6 },
+                    { "x": 3, "y": 6 },
+                    { "x": 4, "y": 6 },
+                    { "x": 5, "y": 6 },
+                    { "x": 6, "y": 6 },
+                    { "x": 7, "y": 6 }
+                ],
+                "white": [
+                    { "x": 0, "y": 1 },
+                    { "x": 1, "y": 1 },
+                    { "x": 2, "y": 1 },
+                    { "x": 3, "y": 1 },
+                    { "x": 4, "y": 1 },
+                    { "x": 5, "y": 1 },
+                    { "x": 6, "y": 1 },
+                    { "x": 7, "y": 1 }
+                ]
+            },
+            "movement": {
+                "forward": 1,
+                "backward": 0,
+                "sideways": 0,
+                "diagonal": 0,
+                "l_shape": false,
+                "diagonal_capture": 1,
+                "first_move_forward": 2
+            },
+            "count": 8
+        },
+        {
+            "type": "rook",
+            "positions": {
+                "black": [
+                    { "x": 0, "y": 7 },
+                    { "x": 7, "y": 7 }
+                ],
+                "white": [
+                    { "x": 0, "y": 0 },
+                    { "x": 7, "y": 0 }
+                ]
+            },
+            "movement": {
+                "forward": -1,
+                "backward": -1,
+                "sideways": -1,
+                "diagonal": 0,
+                "l_shape": false
+            },
+            "count": 2
+        },
+        {
+            "type": "knight",
+            "positions": {
+                "black": [
+                    { "x": 1, "y": 7 },
+                    { "x": 6, "y": 7 }
+                ],
+                "white": [
+                    { "x": 1, "y": 0 },
+                    { "x": 6, "y": 0 }
+                ]
+            },
+            "movement": {
+                "forward": 0,
+                "backward": 0,
+                "sideways": 0,
+                "diagonal": 0,
+                "l_shape": true
+            },
+            "count": 2
+        },
+        {
+            "type": "bishop",
+            "positions": {
+                "black": [
+                    { "x": 2, "y": 7 },
+                    { "x": 5, "y": 7 }
+                ],
+                "white": [
+                    { "x": 2, "y": 0 },
+                    { "x": 5, "y": 0 }
+                ]
+            },
+            "movement": {
+                "forward": 0,
+                "backward": 0,
+                "sideways": 0,
+                "diagonal": -1,
+                "l_shape": false
+            },
+            "count": 2
+        },
+        {
+            "type": "queen",
+            "positions": {
+                "black": [
+                    { "x": 3, "y": 7 }
+                ],
+                "white": [
+                    { "x": 3, "y": 0 }
+                ]
+            },
+            "movement": {
+                "forward": -1,
+                "backward": -1,
+                "sideways": -1,
+                "diagonal": -1,
+                "l_shape": false
+            },
+            "count": 1
+        },
+        {
+            "type": "King",
+            "king_type": true,
+            "positions": {
+                "black": [
+                    { "x": 4, "y": 7 }
+                ],
+                "white": [
+                    { "x": 4, "y": 0 }
+                ]
+            },
+            "movement": {
+                "forward": 1,
+                "backward": 1,
+                "sideways": 1,
+                "diagonal": 1,
+                "l_shape": false
+            },
+            "count": 1
+        }
+    ],
+    "portals": [
+        {
+            "id": "Z",
+            "properties": {
+                "cooldown": 3,
+                "allowed_colors": ["black"]
+            },
+            "positions": {
+                "entry": { "x": 3, "y": 3 },
+                "exit": { "x": 4, "y": 4 }
+            }
+        },
+        {
+            "id": "X",
+            "properties": {
+                "cooldown": 5,
+                "allowed_colors": ["white"]
+            },
+            "positions": {
+                "entry": { "x": 0, "y": 5 },
+                "exit": { "x": 7, "y": 2 }
+            }
+        },
+        {
+            "id": "Y",
+            "properties": {
+                "cooldown": 1,
+                "allowed_colors": ["black", "white"]
+            },
+            "positions": {
+                "entry": { "x": 7, "y": 3 },
+                "exit": { "x": 0, "y": 3 }
+            }
+        }
+    ]
+}
